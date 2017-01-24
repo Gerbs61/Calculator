@@ -4,8 +4,8 @@ public class calculator
 	{
 		static int operation;
 		static String problem;
-		static int number1;
-		static int number2;
+		static double number1;
+		static double number2;
 		public static void main(String[] args)
 			{
 			greetUser();
@@ -24,10 +24,10 @@ public class calculator
 				{
 					System.out.println("ok, what is the first number would you like to add?");
 					Scanner userInput1 = new Scanner(System.in);
-					number1 = userInput.nextInt ();
+					number1 = userInput1.nextDouble ();
 					System.out.println("ok, what is the second number would you like to add?");
 					Scanner userInput2 = new Scanner(System.in);
-					number2 = userInput.nextInt ();
+					number2 = userInput2.nextDouble ();
 					System.out.println(add (number1, number2));
 					System.exit(0);
 				}
@@ -35,10 +35,10 @@ public class calculator
 				{
 					System.out.println("ok, what is the first number would you like to subtract?");
 					Scanner userInput1 = new Scanner(System.in);
-					int number1 = userInput.nextInt ();
+				 number1 = userInput.nextDouble ();
 					System.out.println("ok, what is the second number would you like to subtract?");
 					Scanner userInput2 = new Scanner(System.in);
-					int number2 = userInput.nextInt ();	
+					number2 = userInput.nextDouble ();	
 					System.out.println(subtract (number1, number2));
 					System.exit(0);
 				}
@@ -46,10 +46,10 @@ public class calculator
 				{
 					System.out.println("ok, what is the first number you want to multiply?");
 					Scanner userInput1 = new Scanner(System.in);
-					int number1 = userInput.nextInt ();
+					number1 = userInput1.nextDouble ();
 					System.out.println("ok, what is the second number you want to multiply?");
 					Scanner userInput2 = new Scanner(System.in);
-					int number2 = userInput.nextInt ();
+					number2 = userInput2.nextDouble ();
 					System.out.println( multiply (number1, number2));
 					System.exit(0);
 				}
@@ -58,21 +58,22 @@ public class calculator
 					
 					System.out.println("ok, what is the first number would you like to divide?");
 					Scanner userInput1 = new Scanner(System.in);
-					int number1 = userInput.nextInt ();
+					number1 = userInput1.nextDouble ();
 					System.out.println("ok, what is the second number would you like to divide?");
 					Scanner userInput2 = new Scanner(System.in);
-					divide (number1, number2);
+					number2 = userInput2.nextDouble ();
+					System.out.println(divide (number1, number2));
 					System.exit(0);
 				}
 				else
 				{
 					System.out.println("ok, what is the first number in your operation?");
 					Scanner userInput1 = new Scanner(System.in);
-					int number1 = userInput.nextInt ();
+					number1 = userInput1.nextDouble ();
 					System.out.println("ok, what is the second number in your operation?");
 					Scanner userInput2 = new Scanner(System.in);
-					int number2 = userInput.nextInt ();		
-					increaseExponent (number1, number2);
+					number2 = userInput2.nextDouble ();		
+					System.out.println(increaseExponent (number1, number2));
 					System.exit(0);
 				}
 			
