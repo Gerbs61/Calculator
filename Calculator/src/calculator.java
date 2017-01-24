@@ -20,7 +20,7 @@ public class calculator
 			System.out.println("5.) Exponents");
 			Scanner userInput = new Scanner(System.in);
 			int operation = userInput.nextInt ();
-			if (operation == 1);
+			if (operation == 1)
 				{
 					System.out.println("ok, what is the first number would you like to add?");
 					Scanner userInput1 = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class calculator
 					System.out.println(add (number1, number2));
 					System.exit(0);
 				}
-			 if (operation == 2);
+				else if (operation == 2)
 				{
 					System.out.println("ok, what is the first number would you like to subtract?");
 					Scanner userInput1 = new Scanner(System.in);
@@ -42,7 +42,7 @@ public class calculator
 					System.out.println(subtract (number1, number2));
 					System.exit(0);
 				}
-			if (operation == 3);
+				else if (operation == 3)
 				{
 					System.out.println("ok, what is the first number you want to multiply?");
 					Scanner userInput1 = new Scanner(System.in);
@@ -53,7 +53,7 @@ public class calculator
 					System.out.println( multiply (number1, number2));
 					System.exit(0);
 				}
-			if (operation == 4);
+				else if (operation == 4)
 				{
 					
 					System.out.println("ok, what is the first number would you like to divide?");
@@ -64,7 +64,7 @@ public class calculator
 					divide (number1, number2);
 					System.exit(0);
 				}
-			if (operation == 5);
+				else
 				{
 					System.out.println("ok, what is the first number in your operation?");
 					Scanner userInput1 = new Scanner(System.in);
